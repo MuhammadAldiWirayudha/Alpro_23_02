@@ -1,0 +1,16 @@
+2. Buatlah Pseudocode dari algoritma sebelumnya!
+
+
+b.Menentukan nilai tertinggi antara variabel x,y,dan z
+	-Input nilai x
+	-input nilai y
+	-input nilai z
+	-if x > y && x > z
+	-print "Nilai x lebih besar dari pada y dan z"
+	-endIf
+	-if y > x && y > z
+	-print "Nilai y lebih besar dari pada x dan z"
+	-else
+	-print "Nilai z lebih besar dari pada x dan y"
+	-endIf
+	-Exit

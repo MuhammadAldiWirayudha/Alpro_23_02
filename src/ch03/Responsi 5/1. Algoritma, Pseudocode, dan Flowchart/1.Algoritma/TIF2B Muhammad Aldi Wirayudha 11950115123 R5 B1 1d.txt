@@ -1,0 +1,11 @@
+1. buatlah algoritma untuk program berikut ini!
+
+d. menentukan sebuah angka adalah bilangan prima atau tidak
+	-Input angka yang akan di cek
+	-gunakan fungsi for
+	-gunakan fungsi if
+	-break
+	-gunakan fungsi if
+	-print ("... merupakan bilangan prima");
+	-else
+	-print ("... bukanlah bilangan prima)";

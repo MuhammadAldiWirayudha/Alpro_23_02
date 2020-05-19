@@ -1,0 +1,12 @@
+2. Buatlah Pseudocode dari algoritma sebelumnya!
+
+	a.Menentukan nilai tertinggi antara variabel x dan y
+	
+	-input nilai x
+	-input nilai y
+	-if x > y
+	-print "Nilai x lebih besar dari y"
+	-else
+	-print "Nilai y lebih besar dari x"
+	-end if
+	-exit
