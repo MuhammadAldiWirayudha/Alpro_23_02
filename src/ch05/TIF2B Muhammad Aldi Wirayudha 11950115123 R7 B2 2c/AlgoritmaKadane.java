@@ -1,37 +1,28 @@
-public class AlgoritmaKadane {
-	// Kadane algorithm
-	public int kandane(int[] arrA) {
-		int max_end_here = 0;
-		int max_so_far = 0;
-		for (int i = 0; i < arrA.length; i++) {
-			max_end_here += arrA[i];
-			if (max_end_here < 0) {
-				max_end_here = 0;
-			}
-			if (max_so_far < max_end_here) {
-				max_so_far = max_end_here;
-			}
-		}
-		return max_so_far;
-	}
-
-	// Below modification will allow the program to work even if all the
-	// elements in the array are negative
-	public int KandaneModify(int[] arrA) {
-		int max_end_here = arrA[0];
-		int max_so_far = arrA[0];
-		for(int i=1;i<arrA.length;i++){
-			max_end_here = Math.max(arrA[i], max_end_here+arrA[i]);
-			max_so_far = Math.max(max_so_far,max_end_here);
-		}
-		return max_so_far;
-	}
-
-	public static void main(String args[]) {
-		int arrA[] = { 1, 2, -3, -4, 2, 7, -2, 3 };
-		MaximumSubArray i = new MaximumSubArray();
-		System.out.println("Maximum subarray is  " + i.kandane(arrA));
-		int arrB[] = { -2, -3, -4, -2, -7, -2, -3,-11 };
-		System.out.println("Maximum Subarray when all elements are negative : " + i.KandaneModify(arrB));
-	}
+import java.util.*; 
+  
+public class AlgoritmaKadane { 
+    public static void main (String[] args) 
+    { 
+        int [] a = {-2, -3, 4, -1, -2, 1, 5, -3}; 
+        System.out.println("menemukan jumlah subarray yang berdekatan dalam array yang memiliki jumlah terbesar ");
+        System.out.println("========");
+        System.out.println("Maximum contiguous sum is " + 
+                                       maxSubArraySum(a)); 
+    } 
+  
+    static int maxSubArraySum(int a[]) 
+    { 
+        int size = a.length; 
+        int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
+  
+        for (int i = 0; i < size; i++) 
+        { 
+            max_ending_here = max_ending_here + a[i]; 
+            if (max_so_far < max_ending_here) 
+                max_so_far = max_ending_here; 
+            if (max_ending_here < 0) 
+                max_ending_here = 0; 
+        } 
+        return max_so_far; 
+    } 
 }
