@@ -1,8 +1,0 @@
-1. Buatlah algoritma untuk program berikut ini!
-
-a.Menentukan nilai tertinggi antara variabel x dan y
-	-masukkan/input nilai x
-	-input nilai y
-	-Nilai x dan y akan dihitung dengan rumus x > y  menggunakan rumus if
-	-Jika nilai x lebih besar maka nilai x yang akan di tampilkan
-	-jika nilai y lebih besar maka nilai y yang akan di tampilkan

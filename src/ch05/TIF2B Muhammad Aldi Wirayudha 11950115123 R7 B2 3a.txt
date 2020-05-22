@@ -1,8 +1,0 @@
-   subseq(char * P, char * T)
-    {
-        while (*T != '\0')
-            if (*P == *T++ && *++P == '\0')
-                return TRUE;
-        return FALSE;
-    }
-Longes
